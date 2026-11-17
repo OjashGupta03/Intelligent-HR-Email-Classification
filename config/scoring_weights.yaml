@@ -1,0 +1,33 @@
+# Executive AI Chief of Staff - Priority Scoring Weights
+# These weights control how the final priority score (0-100) is computed.
+# All weights should sum to 1.0.
+# Adjust based on executive preferences.
+
+weights:
+  urgency: 0.20
+  business_impact: 0.20
+  sender_importance: 0.15
+  deadline_proximity: 0.12
+  financial_impact: 0.10
+  action_required: 0.10
+  strategic_importance: 0.08
+  conversation_context: 0.05
+
+# Priority level thresholds (score -> level)
+thresholds:
+  critical: 85
+  high: 65
+  medium: 40
+  low: 0
+
+# VIP Senders - add email addresses with importance scores
+vip_senders:
+  # "ceo@company.com": 95
+  # "cfo@company.com": 90
+  # "board@company.com": 95
+
+# VIP Domains - domains that automatically boost importance
+vip_domains:
+  # "sec.gov": 30
+  # "irs.gov": 25
+
